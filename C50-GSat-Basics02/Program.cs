@@ -61,11 +61,18 @@ internal class Program
         #endregion
         #region Question5
         //5- Declare an int pages = 300; then store it in a double variable without using a cast.
-        int pages = 300;
+        //int pages = 300;
+        //
+        //double bookPages = pages;
+        //
+        //Console.WriteLine(bookPages);
+        #endregion
+        #region Question6
+        //6- Declare a double price = 49.99; then convert it into an int using a cast.
+        double price = 49.99;
+        int priceInt =(int)price;
 
-        double bookPages = pages;
-
-        Console.WriteLine(bookPages);
+        Console.WriteLine(priceInt);
         #endregion
     }
 
