@@ -9,5 +9,9 @@ namespace C50_GSat_Basics02
         public string Title;
         public int Pages;
 
+        public override string ToString()
+        {
+            return $"Title:{Title},Pages:{Pages}";
+        }
     }
 }
