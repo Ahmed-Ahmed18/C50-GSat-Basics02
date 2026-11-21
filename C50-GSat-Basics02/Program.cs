@@ -40,24 +40,32 @@ internal class Program
         //4- Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
         //zero", and then prints "Done" in a finally block.
 
-        int x = 10;
-        int y = 0;
-        try
-        {
-            int z = x / y;
-            Console.WriteLine(z);
+        //int x = 10;
+        //int y = 0;
+        //try
+        //{
+        //int z = x / y;
+        //Console.WriteLine(z);
 
-        }
-        catch (Exception ex) 
-        {
-            Console.WriteLine("Cannot Divide By Zero");
-        }
-        finally
-        {
-            Console.WriteLine("Done");
-        }
-        
+        //}
+        //catch (Exception ex) 
+        //{
+        //Console.WriteLine("Cannot Divide By Zero");
+        //}
+        //finally
+        //{
+        //Console.WriteLine("Done");
+        //}
 
+
+        #endregion
+        #region Question5
+        //5- Declare an int pages = 300; then store it in a double variable without using a cast.
+        int pages = 300;
+
+        double bookPages = pages;
+
+        Console.WriteLine(bookPages);
         #endregion
     }
 
