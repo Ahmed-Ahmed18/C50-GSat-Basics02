@@ -111,14 +111,24 @@ internal class Program
         #region Question10
         //10- Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
         //variable, and print both.
-        int copies = 100;
+        //int copies = 100;
 
-        object obj = copies;
+        //object obj = copies;
 
-        int newCopies = (int)obj;
+        //int newCopies = (int)obj;
 
-        Console.WriteLine(copies);
-        Console.WriteLine(newCopies);
+        //Console.WriteLine(copies);
+        //Console.WriteLine(newCopies);
+        #endregion
+        #region Question11
+        //11- Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
+        int? year = null;
+
+        Console.WriteLine(year.HasValue);
+
+        year = 2023;
+
+        Console.WriteLine(year.Value);
         #endregion
     }
 
