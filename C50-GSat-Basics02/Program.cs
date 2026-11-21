@@ -139,8 +139,19 @@ internal class Program
         #region Question13
         //13- Declare a Book? book = null;. Use ?. to safely read book.Title without crashing the program, and
         //print the result.
-        Book? book= null;
-        Console.WriteLine(book?.Title);
+        // Book? book= null;
+        // Console.WriteLine(book?.Title);
+        #endregion
+        #region Question 14
+        //14- Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??= to
+        //assign title the value "Untitled" only if it's still null.
+        string? title = null;
+
+        Console.WriteLine(title ?? "Untitled");
+
+        title ??= "Untitled";
+
+        Console.WriteLine(title);
         #endregion
 
     }
