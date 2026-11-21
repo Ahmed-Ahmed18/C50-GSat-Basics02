@@ -1,4 +1,6 @@
 ﻿using C50_GSat_Basics02;
+using System.Drawing;
+using System.Runtime.Intrinsics.X86;
 
 internal class Program
 {
@@ -76,10 +78,28 @@ internal class Program
         #endregion
         #region Question7
         //7- Given string pagesText = "464";, convert it into an int using the Convert class.
-        string pagesText = "464";
-        int pages = Convert.ToInt32(pagesText);
+        //string pagesText = "464";
+        //int pages = Convert.ToInt32(pagesText);
 
-        Console.WriteLine(pages);
+        //Console.WriteLine(pages);
+        #endregion
+        #region Question8
+        //8- Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";,
+        //use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+
+        string yearText = "2023";
+        int yearTextInt= int.Parse(yearText);
+        Console.WriteLine(yearTextInt);
+
+        string badText = "abc";
+        if (int.TryParse(badText,out int badTextInt))
+        {
+            Console.WriteLine(badTextInt);
+        }
+        else
+        {
+            Console.WriteLine("Invalid Number");
+        }
         #endregion
     }
 
