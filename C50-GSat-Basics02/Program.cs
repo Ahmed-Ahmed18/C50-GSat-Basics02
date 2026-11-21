@@ -69,10 +69,17 @@ internal class Program
         #endregion
         #region Question6
         //6- Declare a double price = 49.99; then convert it into an int using a cast.
-        double price = 49.99;
-        int priceInt =(int)price;
+        //double price = 49.99;
+        //int priceInt =(int)price;
+        //
+        //Console.WriteLine(priceInt);
+        #endregion
+        #region Question7
+        //7- Given string pagesText = "464";, convert it into an int using the Convert class.
+        string pagesText = "464";
+        int pages = Convert.ToInt32(pagesText);
 
-        Console.WriteLine(priceInt);
+        Console.WriteLine(pages);
         #endregion
     }
 
