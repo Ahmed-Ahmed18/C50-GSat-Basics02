@@ -90,23 +90,35 @@ internal class Program
         //string yearText = "2023";
         //int yearTextInt= int.Parse(yearText);
         //Console.WriteLine(yearTextInt);
-        
+
         //string badText = "abc";
         //if (int.TryParse(badText,out int badTextInt))
         //{
-            //Console.WriteLine(badTextInt);
+        //Console.WriteLine(badTextInt);
         //}
         //else
         //{
-            //Console.WriteLine("Invalid Number");
+        //Console.WriteLine("Invalid Number");
         //}
         #endregion
         #region Question9
-         //9- Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
-         //to prove it's now a string.
-           int pages = 464;
-           string sPages = pages.ToString();
-           Console.WriteLine(sPages.GetType());
+        //9- Given int pages = 464;, convert it into a string using ToString() and print its type using GetType()
+        //to prove it's now a string.
+        //int pages = 464;
+        //string sPages = pages.ToString();
+        //Console.WriteLine(sPages.GetType());
+        #endregion
+        #region Question10
+        //10- Declare int copies = 100;. Box it into an object variable, then unbox it back into a new int
+        //variable, and print both.
+        int copies = 100;
+
+        object obj = copies;
+
+        int newCopies = (int)obj;
+
+        Console.WriteLine(copies);
+        Console.WriteLine(newCopies);
         #endregion
     }
 
