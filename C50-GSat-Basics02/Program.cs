@@ -122,14 +122,21 @@ internal class Program
         #endregion
         #region Question11
         //11- Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
-        int? year = null;
+        //int? year = null;
 
-        Console.WriteLine(year.HasValue);
+        //Console.WriteLine(year.HasValue);
 
-        year = 2023;
+        //year = 2023;
 
-        Console.WriteLine(year.Value);
+        //Console.WriteLine(year.Value);
         #endregion
+        #region Question12
+        // 12- Declare a string? reviewer = null;. Print whether it is null.
+         string ? reviewer = null;
+
+         Console.WriteLine(reviewer == null);
+        #endregion
+
     }
 
 
